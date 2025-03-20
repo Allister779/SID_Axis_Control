@@ -1,5 +1,6 @@
 -- This is a way to switch SID_AXIS based on the position of Aux1.  
 -- SystemID paramenters should be set up before using this script.  
+-- 
 
 local SCRIPT_NAME     = 'SID_AXIS_Switch'
 local RUN_INTERVAL_MS = 1000
