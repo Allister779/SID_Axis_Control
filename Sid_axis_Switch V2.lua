@@ -6,13 +6,30 @@ local RUN_INTERVAL_MS = 1000
 local RC_OPTION       = 300 -- Set up a 3-pos switch for Scripting1
 
 -- User to set the specific axis and magnitutde for each switch postion.
-local AXIS_LOW        = 4
+
+-- SID_AXIS Values
+
+--  0 None
+
+--  1 Input Roll Angle
+--  2 Input Pitch Angle
+--  3 Input Yaw Angle
+
+--  4 Recovery Roll Angle
+--  5 Recovery Pitch Angle
+--  6 Recovery Yaw Angle
+
+--  7 Rate Roll
+--  8 Rate Pitch
+--  9 Rate Yaw
+
+local AXIS_LOW        = 4  -- SID_AXIS with the switch in the low position
 local MAGNITUDE_LOW   = 5
 
-local AXIS_MID        = 5
+local AXIS_MID        = 5  -- SID_AXIS with the switch in the mid positoin
 local MAGNITUDE_MID   = 5
 
-local AXIS_HIGH       = 6
+local AXIS_HIGH       = 6  -- SID_AXIS with the switch in the high position
 local MAGNITUDE_HIGH  = 5
 
 local MAV_SEVERITY_EMERGENCY = 0
