@@ -80,13 +80,11 @@ function update()
 
     if sw_pos == 1 then
         param:set('SID_AXIS',AXIS_MID)
-        param:set('SID_MAGNITUDE',MAGNITUDE_MID)
         gcs_msg(MAV_SEVERITY_INFO, string.format('Set Axis %s', AXIS_MID))
     end
 
     if sw_pos == 2 then
         param:set('SID_AXIS',AXIS_HIGH)
-        param:set('SID_MAGNITUDE',MAGNITUDE_HIGH)
         gcs_msg(MAV_SEVERITY_INFO, string.format('Set Axis %s', AXIS_HIGH))
     end
 
